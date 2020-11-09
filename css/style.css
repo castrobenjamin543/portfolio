@@ -6,7 +6,7 @@ body {
 }
 
 header {
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     background-color: #000;
     color: #fff;
@@ -17,17 +17,23 @@ header {
     width: 100%;
     height: 100%;
     display: flex;
-    text-align: center;
-    align-items: center;
+    justify-content: center;
 }
 
 img {
-    width: 280px;
-    height: 250px;
-    
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
 }
 
 .my-extracto {
+    width: 80%;
+    height: inherit;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
     padding: 20px;
 }
 
@@ -58,3 +64,33 @@ img {
 
 
 
+
+
+@media screen and (min-width: 320px){
+
+    
+
+
+}
+
+@media screen and (min-width: 769px){
+    .stack-job {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .stack-technology {
+        width: 50%;
+    }
+
+    .technology-hobbies {
+        width: 50%;
+    }
+
+    .herramientas {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
